@@ -3,8 +3,7 @@
  * @author Marcin Mikołajczyk <marcin@pjwstk.edu.pl>
  * @author Wojciech Jabłoński <www.jablonski@gmail.com>
  * @author Bogusław Zięba <bobi@poczta.fm>
- * @author Bogusław Zięba <bobi@poczta.fm>
- * @version 2018-02-18
+ * @version 2018-03-08
  */
 (function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
@@ -16,7 +15,7 @@
 	}
 }(this, function(elFinder) {
 	elFinder.prototype.i18.pl = {
-		translator : 'Marcin Mikołajczyk &lt;marcin@pjwstk.edu.pl&gt;, Wojciech Jabłoński &lt;www.jablonski@gmail.com&gt;, Bogusław Zięba &lt;bobi@poczta.fm&gt;, Bogusław Zięba &lt;bobi@poczta.fm&gt;',
+		translator : 'Marcin Mikołajczyk &lt;marcin@pjwstk.edu.pl&gt;, Wojciech Jabłoński &lt;www.jablonski@gmail.com&gt;, Bogusław Zięba &lt;bobi@poczta.fm&gt;, Bogusław Zięba &lt;bobi@poczta.fm&gt;, Bogusław Zięba &lt;bobi@poczta.fm&gt;',
 		language   : 'Polski',
 		direction  : 'ltr',
 		dateFormat : 'd.m.Y H:i', // Mar 13, 2012 05:27 PM
@@ -28,7 +27,7 @@
 			'error'                : 'Błąd',
 			'errUnknown'           : 'Nieznany błąd.',
 			'errUnknownCmd'        : 'Nieznane polecenie.',
-			'errJqui'              : 'Niepoprawna konfiguracja jQuery UI. Muszą być zawarte komponenty selectable, draggable i droppable.',
+			'errJqui'              : 'Niepoprawna konfiguracja jQuery UI. Muszą być zawarte komponenty wybieralne, przeciągalne i upuszczalne.',
 			'errNode'              : 'elFinder wymaga utworzenia obiektu DOM.',
 			'errURL'               : 'Niepoprawna konfiguracja elFinder! Pole URL nie jest ustawione.',
 			'errAccess'            : 'Dostęp zabroniony.',
@@ -447,6 +446,10 @@
 			'asSuffix'        : 'Dodaj suffix', // from v2.1.31 added 8.12.2017
 			'changeExtention' : 'Zmień rozszerzenie', // from v2.1.31 added 8.12.2017
 			'columnPref'      : 'Ustawienia kolumn (Widok listy)', // from v2.1.32 added 6.2.2018
+			'reflectOnImmediate' : 'Wszystkie zmiany widoczne natychmiast w archiwum.', // from v2.1.33 added 2.3.2018
+			'reflectOnUnmount'   : 'Wszelkie zmiany nie będą widoczne, dopóki nie odłączysz tego woluminu.', // from v2.1.33 added 2.3.2018
+			'unmountChildren' : 'Następujący(e) wolumin(y) zamontowany na tym woluminie również nie odmontowany. Czy na pewno chcesz go odmontować?', // from v2.1.33 added 5.3.2018
+			'selectionInfo'   : 'Informacja Wyboru', // from v2.1.33 added 7.3.2018
 
 			/********************************** mimetypes **********************************/
 			'kindUnknown'     : 'Nieznany',
@@ -532,4 +535,3 @@
 		}
 	};
 }));
-
